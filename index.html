@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner">
+        <h1><span class="finder-highlight">🎓 University Finder</span></h1>
+        <nav aria-label="Main navigation">
+            <ul class="nav">
+                <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="#chatbot" class="nav-link">Chatbot</a></li>
+                <li><a href="#career-test" class="nav-link">Career Test</a></li>
+                <li><a href="#compare" class="nav-link">Compare</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#cost-calculator" class="nav-link">Cost Calculator</a></li>
+                <li><a href="#map" class="nav-link">Map</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#preparation" class="nav-link">Preparation</a></li>
+                <li><a href="#reminders" class="nav-link">Reminders</a></li>
+                <li><a href="#payback" class="nav-link">Payback</a></li>
+                <li><a href="#upload" class="nav-link">Upload</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content" role="main" tabindex="-1">
+        <section id="home">
+            <div class="container">
+                <h2>Find Your University</h2>
+                <form id="profession-form" aria-label="Choose your profession">
+                    <fieldset>
+                        <legend>Choose Your Profession</legend>
+                        <div id="profession-list"></div>
+                    </fieldset>
+                </form>
+                <form id="grant-form" style="display:none;" aria-label="Grant selection">
+                    <fieldset>
+                        <legend>Do you want a full grant?</legend>
+                        <button id="grant-yes" type="button">Full Grant</button>
+                        <button id="grant-no" type="button">No Grant</button>
+                    </fieldset>
+                </form>
+                <section id="step-universities" style="display:none;">
+                    <h3>Select a University</h3>
+                    <ul id="university-list" aria-label="University list"></ul>
+                </section>
+                <section id="step-details" style="display:none;">
+                    <h3>University Details</h3>
+                    <div id="university-details"></div>
+                    <button id="back-universities" type="button">Back to Universities</button>
+                </section>
+            </div>
+        </section>
+        <section id="chatbot" style="display:none;">
+            <div class="container">
+                <h2>AI Assistant</h2>
+                <div id="chatbot-box" aria-live="polite"></div>
+            </div>
+        </section>
+        <section id="career-test" style="display:none;">
+            <div class="container">
+                <h2>Career Guidance Test</h2>
+                <div id="career-test-box"></div>
+            </div>
+        </section>
+        <section id="compare" style="display:none;">
+            <div class="container">
+                <h2>Compare Universities</h2>
+                <div id="compare-box"></div>
+            </div>
+        </section>
+        <section id="news" style="display:none;">
+            <div class="container">
+                <h2>News & Updates</h2>
+                <div id="news-box"></div>
+            </div>
+        </section>
+        <section id="cost-calculator" style="display:none;">
+            <div class="container">
+                <h2>Cost Calculator</h2>
+                <div id="cost-calculator-box"></div>
+            </div>
+        </section>
+        <section id="map" style="display:none;">
+            <div class="container">
+                <h2>Interactive Map</h2>
+                <div id="map-box"></div>
+            </div>
+        </section>
+        <section id="reviews" style="display:none;">
+            <div class="container">
+                <h2>Reviews & Success Stories</h2>
+                <div id="reviews-box"></div>
+            </div>
+        </section>
+        <section id="faq" style="display:none;">
+            <div class="container">
+                <h2>FAQ & Glossary</h2>
+                <div id="faq-box"></div>
+            </div>
+        </section>
+        <section id="preparation" style="display:none;">
+            <div class="container">
+                <h2>Preparation for Admission</h2>
+                <div id="preparation-box"></div>
+            </div>
+        </section>
+        <section id="reminders" style="display:none;">
+            <div class="container">
+                <h2>Reminders</h2>
+                <div id="reminders-box"></div>
+            </div>
+        </section>
+        <section id="payback" style="display:none;">
+            <div class="container">
+                <h2>Payback Calculator</h2>
+                <div id="payback-box"></div>
+            </div>
+        </section>
+        <section id="upload" style="display:none;">
+            <div class="container">
+                <h2>Document Upload & Check</h2>
+                <div id="upload-box"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
